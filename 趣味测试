@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class one {
+    public static void main(String[] args){
+        System.out.println("难得的连续假期，如果要去参加旅游活动，坐火车是你选择的交通工具，在漫长的旅程中，你会期望看到什么样的场景？");
+        System.out.println("1.隧道");
+        System.out.println("2.大海");
+        System.out.println("3.森林");
+        System.out.println("4.草原");
+        Scanner sc=new Scanner(System.in);
+        int res=sc.nextInt();
+
+        switch(res){
+            case 1:
+                System.out.println("当你一个人的时候，最想的就是睡觉，或是赶快找人玩乐，不过通常前面的成份高出狠多，这不代表你是一个狠懒的人，相反的你活动力惊人，只是想利用只有一个人的时间好好的休息一番，补足力气后再去玩。");
+                break;
+            case 2:
+                System.out.println("当你一个人的时候，就是你最想好好一个人享受的时候，可能做个舒服的，或是放鬆的按摩，让自己的身体，有受到宠爱的感觉。");
+                break;
+            case 3:
+                System.out.println("当你一个人的时候，你会想要利用这样的时间，好让自己有一个深度之旅，例如看看书或是到户外，藉由阅读或是参观，来增广见闻，继续充实自我。");
+                break;
+            case 4:
+                System.out.println("当你一个人的时候，你会整理一下长久以来紊乱的思绪，或是打电话给平日因忙碌而忽略的友朋，满足心裡温情的感觉，这是你最大的快乐。");
+                break;
+        }
+    }
+}
