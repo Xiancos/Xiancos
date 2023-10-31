@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+public class game1_modi2 {
+    public static void main(String[] args) {
+        String player_name;
+        String com_name;
+        int player_choice;
+        int com_choice;
+        String player_choice_name;
+        String com_choice_name;
+        System.out.println("**********************************");
+        System.out.println("    游戏:剪刀石头布");
+        System.out.println("                作者:XXXXXX");
+        System.out.println("                版本：v1.2");
+        System.out.println("*********************************");
+        System.out.println("欢迎进入本游戏，请输出游戏玩家的名字:");
+        Scanner scanner = new Scanner(System.in);
+        player_name=scanner.nextLine();
+        if(player_name.trim().equals("")){
+            player_name="匿名的玩家";
+        }
+        System.out.println("********************************");
+        System.out.println("1-----蜡笔小清新");
+        System.out.println("2-----金刚葫芦娃");
+        System.out.println("*********************************");
+        String com_no=scanner.next();
+        switch(com_no){
+            case "1":
+                com_name="蜡笔小清新";
+                break;
+            case "2":
+                com_name="金刚葫芦娃";
+                break;
+            default:
+                com_name="匿名的玩家";
+        }
+        System.out.println("****请玩家选择出拳的代表数字*********");
+        System.out.println("1------剪刀");
+        System.out.println("2------石头");
+        System.out.println("3------布");
+        System.out.println("*********************************");
+        String tmp_choice=scanner.next();
+        switch(tmp_choice){
+            case "1":
+                player_choice=Integer.parseInt(tmp_choice);
+                break;
+            case "2":
+                player_choice=Integer.parseInt(tmp_choice);
+                break;
+            case "3":
+                player_choice=Integer.parseInt(tmp_choice);
+                break;
+            default:
+                player_choice=(int)Math.round(Math.random()*2+1);
+
+        }
+        switch(player_choice){
+            case 1:
+                player_choice_name="剪刀";
+                break;
+            case 2:
+                player_choice_name="石头";
+                break;
+            default:
+                player_choice_name="布";
+        }
+        com_choice=(int)Math.round(Math.random()*2+1);
+        switch(com_choice){
+            case 1:
+                com_choice_name="剪刀";
+                break;
+            case 2:
+                com_choice_name="石头";
+                break;
+            default:
+                com_choice_name="布";
+        }
+        if(player_choice-com_choice==1 || player_choice-com_choice==-2){
+            System.out.println("玩家:"+player_name+",出拳："+player_choice_name+"赢");
+            System.out.println("电脑:"+com_name+"，出拳："+com_choice_name+"输");
+        }else if(com_choice-player_choice==1 || com_choice-player_choice==-2){
+            System.out.println("电脑:"+com_name+"，出拳："+com_choice_name+"赢");
+            System.out.println("玩家:"+player_name+",出拳："+player_choice_name+"输");
+        }else{
+            System.out.println("电脑:"+com_name+"，出拳："+com_choice_name+"平局");
+            System.out.println("玩家:"+player_name+",出拳："+player_choice_name+"平局");
+        }
+    }
+}
