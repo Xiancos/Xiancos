@@ -1,0 +1,204 @@
+1) 在 Java 类中，使用以下(B)声明语来定义公有的 int 型常量 MAX
+A. public int MAX = 100:
+B. final int MAX = 100:
+C. public static int MAX = 100:
+D. public static final int MAX =100:
+2) 在 Java 中，下列关于方法重载的说法中错误的是(D)
+A.方法重载要求方法名称必须相同
+B.重载方法的参数列表必须不一致
+C.重载方法的返回类型必须一致
+D.一个方法在所属的类中只能被重载一次
+3) 在 Java 接口中定义常量，下面语法错误的是(D)。
+A. static int MALE =1;
+B. final int MALE=1;
+C. int MALE=1;
+D. private int MALE=1;
+4) 在 Java 中，下面对于构造函数的描述正确的是 (D)。
+A.类必须显式定义构造函数
+B.构造函数的返回类型是void
+C.构造函数和类有相同的名称，并且不能带任何参数
+D.一个类可以定义多个构造函数
+5) 下面 Java 代码的运行结果是 (C)。
+class Penguin {
+private String name=null; // 名字
+private int health=0; // 健康值
+private String sex=null; // 性别
+public void Penguin(){
+health = 10;
+sex = “雄”;
+System.out.printIn(“执行构造方法。”);
+}
+public void print(){
+System.out.println(“企鹅的名字是”+ name +“,健康值是” + health +“，性别是” + sex+ “。”);
+public static void main(string[] args){
+Penguin pgn = new Penguin();
+pgn.print();
+}
+}
+A.企鹅的名字是 null，健康值是 10，性别是雄。
+B.执行构造方法。
+企鹅的名字是 null，健康值是 0，性别是 null。
+C.企鹅的名字是 null，健康值是 0，性别是 null.
+D.执行构造方法。
+  企鹅的名字是 null，健康值是10，性别是雄。
+6)下列选项中关于 Java 中封装的说法错误的是 (D)。
+A.封装就是将属性私有化，提供公有的方法访问私有属性
+B.属性的访问方法包括 setter 方法和 getter 方法
+C.setter 方法用于赋值、getter 方法用于取值
+D.类的属性必须进行封装，否则无法通过编译
+7) 使用Java 实现封装，第一步是修改属性可见性来限制对属性的访问，第二步是创建赋值和取值方法,用于对属性的访问，第三步应该是 (D)。
+A.使用赋值和取值方法访问属性
+B.编写常规方法访问属性
+C.在赋值和取值方法中，加入对属性的存取限制
+D.编写 main 方法创建对象，调用赋值和取值方法访问属性
+8)分析如下所示的 Java 代码，其中 this 关键字的意思是(B)。
+public class Test {
+private String name;
+public String getName() {
+return name;
+}
+public void setName(string name){
+this .name = name;//this 关键字所在的行
+}
+}
+A.name属性
+B.Test 类的内部指代自身的引用
+C.Test 类的对象引用 Test 类的其他对象
+D.指所在的方法
+9)在 Java 中，以下程序编译运行后的输出结果为 (D)。
+public class Test {
+int x,y;
+Test(int x,int y){
+this.x = x;
+this.y = y;
+}
+public static void main(String[] args) {
+Test pt1，pt2;
+pt1 = new Test(3，3);
+pt2 = new Test(4，4);
+System.out.print (pt1.x + pt2.x);
+}
+}
+A.6
+B.3 4
+C.8
+D.7
+10) 在 Java 语言中，下列关于类的继承的描述，正确的是 (B)。
+A.一个类可以继承多个父类
+B.一个类可以具有多个子类
+C.子类可以使用父类的所有方法
+D.子类一定比父类有更多的成员方法
+11) Java 中，如果类 C是类B 的子类，类B 是类A 的子类，那么下面描述正确的是(A)。A. C 不仅继承了 B 中的公有成员，同样也继承了 A 中的公有成员
+B. C只继承了B中的成员
+C. C只继承了A中的成员
+D. C不能继承A或B中的成员
+12) 给定一个 Java 程序 Test,java 的代码如下所示，编译时，会出现以下(A)情况。
+class Parent{
+public int count(){               //第1行
+return 0;
+}
+}
+public class Test extends Parent{
+private int i;
+public int count(){               //第2行
+return i %9;                      //第3行
+}
+}
+A.编译通过
+B.在第1行引发编译错误
+C.在第2行引发编译错误
+D.在第 3 行引发编译错误
+13) 给定如下一个 Java 源文件 Child.java，编译并运行 Child.java，以下结果正确的是(B)。
+class Parent1{
+Parentl(String s){
+System.out.println(s);
+}
+class Parent2 extends Parent1{
+Parent2(){
+System.out.println("parent2");
+}
+}
+public class Child extends Parent2{
+public static void main(Stringl[] args) Child child = new Child();
+}
+}
+A.编译错误: 没有找到构造器 Child()
+B.编译错误: 没有找到构造器 Parent1()
+C.正确运行，没有输出值
+D.正确运行，输出结果为:parent2
+14) 给定 Java 程序 Child.java 的代码如下所示，则编译运行该类的结果是(C)。
+class Parent{
+Parent(){
+System.out.println(“parent”);
+}
+}
+public class Child extends Parent{
+Child(String s){
+System.out.println(s);
+}
+public static void main(String[] args){
+Child child = new Child(“child”);
+}
+}
+A.输出:child
+B.输出:child
+parent
+C.输出: parent
+child
+D.编译错误
+15)下列选项中关于 Java 中 super 关键字的说法错误的是(C)。
+A. super 关键字是在子类对象内部指代其父类对象的引用
+B. super 关键字不仅可以指代子类的直接父类，还可以指代父类的父类
+C. 子类可以通过super关键字调用父类的方法
+D. 子类可以通过super关键字调用父类的属性
+16) 分析如下所示的 Java 代码，则选项中的说法正确的是(C)
+class Parent{
+public String name;
+public Parent(string pName){
+this.name=pName;
+}
+}
+public class Test extends Parent{      //1
+public Test(String Name){              //2
+name="hello";                          //3
+super("kitty");                        //4
+}
+}
+A.第 2行错误，Test 类的构造函数中参数名称应与其父类构造函数中的参数名相同
+B.第3行错误，应使用 super 关键字调用父类的 name 属性，改为 super.name="hello";
+C.第 4 行错误，调用父类构造方法的语句必须放在子类构造方法中的第一行
+D.程序编译通过，无错误
+17) 以下关于 Object类说法错误的是(B)。
+A. 一切类都直接或间接继承自 Object类
+B. 接口亦继承 Object 类
+C. Object 类中定义了 toString()方法
+D. Obiect 类在java.lang 包中
+18)在 Java 中，多态的实现不仅能减少编码的工作量，还能大大提高程序的可维护性及可扩展性，那么实现多态的步骤包括以下几个方面除了(C)。
+A. 子类重写父类的方法
+B. 子类重载同一个方法
+C. 定义方法时，把父类类型作为参数类型;调用方法时，把父类或子类的对象作为参数传入方法
+D. 运行时，根据实际创建的对象类型动态决定使用哪个方法
+19) 给定 Java 代码如下所示，则编译运行后，输出结果是(C)。
+class Parent{
+public void count(){
+System.out.println(10%3);
+}
+}
+public class Child extends Parent{
+public void count(){
+System.out.printIn(10/3);
+}
+public static void main(String args[]){
+Parent p = new Child();
+p.count();
+}
+}
+A. 1
+B. 1.0
+C. 3
+D. 3.3333333333333335
+20)下面关于 Java 接口的说法错误的是(C)。
+A. 一个 Java 接口是一些方法特征的集合，但没有方法的实现
+B. Java 接口中定义的方法在不同的地方被实现，可以具有完全不同的行为
+C. Java 接口中可以声明私有成员
+D. Java 接口不能被实例化

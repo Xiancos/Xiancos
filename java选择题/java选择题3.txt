@@ -1,0 +1,119 @@
+1.Java中基本数据类型不包括：(d)
+a) int
+b) float
+c) boolean
+d) string
+
+2.在Java中，下列哪个关键字用于定义一个类？(a)
+a) class
+b) struct
+c) type
+d) interface
+
+3.下列哪个选项在Java中用于创建一个对象？(a)
+a) new
+b) create
+c) instantiate
+d) object
+
+4.下列哪个关键字用于定义接口？(a)
+a) interface
+b) class
+c) implements
+d) extends
+
+5.在Java中，以下哪种访问修饰符将成员声明为“包内可见”？(d)
+a) public
+b) protected
+c) private
+d) default
+
+6.下列哪种循环结构会在循环开始之前先执行一次循环体？(c)
+a) for
+b) while
+c) do-while
+d) loop
+
+7.在Java中，用于存储不同数据类型的容器是：(b)
+a) Array
+b) List
+c) Set
+d) Map
+
+8.下列哪个方法用于在标准输出上打印文本？(c)
+a) System.print()
+b) Console.write()
+c) System.out.println()
+d) Console.print()
+
+9.Java中的自动装箱是指：(b)
+a) 将对象转换为基本数据类型
+b) 将基本数据类型转换为对象
+c) 将字符串转换为字符
+d) 将字符转换为字符串
+
+10.下列哪个关键字用于退出当前循环并继续执行下一次循环迭代？(c)
+a) next
+b) break
+c) continue
+d) exit
+
+11.下列哪个选项可以用于处理异常？(a)
+a) try-catch
+b) if-else
+c) while-loop
+d) for-loop
+
+12Java中的继承是指：(c)
+a) 类继承接口
+b) 接口继承类
+c) 类继承类
+d) 接口继承接口
+
+13.下列哪个关键字用于让一个类的方法具有多态性？(d)
+a) static
+b) virtual
+c) final
+d) abstract
+
+14.下列哪个选项用于在子类中调用父类的构造方法？(a)
+a) super()
+b) this()
+c) parent()
+d) base()
+
+15.下列哪种集合类是按照插入顺序来存储元素的？(d)
+a) HashSet
+b) HashMap
+c) ArrayList
+d) LinkedHashMap
+
+16.下列哪个选项用于在Java中实现多线程？(c)
+a) multitask
+b) multiprocess
+c) multithread
+d) multiprocessing
+
+17.在Java中，哪个关键字用于防止类被继承？(a)
+a) final
+b) private
+c) protected
+d) static
+
+18.下列哪个方法用于比较两个字符串的内容是否相等？(b)
+a) compare()
+b) equals()
+c) compareTo()
+d) equalsIgnoreCase()
+
+19.下列哪个选项可以用于实现接口的多重继承？(b)
+a) extends
+b) implements
+c) inherits
+d) includes
+
+20.下列哪种异常是Java的编译时异常？(c)
+a) NullPointerException
+b)ArrayIndexOutOfBoundsException
+c) ClassNotFoundException
+d) ArithmeticException
