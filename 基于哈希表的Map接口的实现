@@ -1,0 +1,54 @@
+import javax.print.attribute.standard.SheetCollate;
+import java.util.*;
+
+public class test_hashMap {
+    public static void main(String[] args) {
+        Map<String,String> maps=new HashMap<>();
+        maps.put("姓名","张三");
+        maps.put("年龄","32");
+        maps.put("性别","男");
+        maps.put("姓名","李四");
+        System.out.println(maps);
+        System.out.println("第一种方法遍历map");
+        Set<String> mykeys=maps.keySet();
+        for(String key:mykeys){
+            System.out.println(key+"----->"+maps.get(key));
+
+        }
+        System.out.println("第二种方法遍历map");
+        Set<String> myotherkeys=maps.keySet();
+        Iterator<String> myiter=myotherkeys.iterator();
+        while(myiter.hasNext()){
+            String key=myiter.next();
+            //再取value
+            String value=maps.get(key);
+            System.out.println(key+"-------->"+value);
+        }
+        Set<Map.Entry<String,String>> myentrys=maps.entrySet();
+        for(Map.Entry<String,String> entry:myentrys){
+            String key=entry.getKey();
+            String value=entry.getValue();
+            System.out.println(key+"------------>"+value);
+        }
+        Set<Map.Entry<String,String>> myentry=maps.entrySet();
+        Iterator myiter1=myentry.iterator();
+        while(myiter1.hasNext()){
+            Map.Entry<String,String> entry1=(Map.Entry<String,String>)myiter1.next();
+            String key=entry1.getKey();
+            String value=entry1.getValue();
+            System.out.println(key+"-----------4------>"+value);
+        }
+        Collection<String> myvalues=maps.values();
+        ArrayList<String> mylist=new ArrayList(myvalues);
+        Set<String> myanotherkeys=maps.keySet();
+        ArrayList<String> mysets=new ArrayList(myanotherkeys);
+        int len=mysets.size();
+        for(int i=0;i<len;i++){
+            System.out.println(mysets.get(i)+"----------->"+mylist.get(i));
+        }
+        maps.remove("年龄");
+        System.out.println(maps);
+        maps.put("性别","女");
+        System.out.println(maps);
+    }
+}
