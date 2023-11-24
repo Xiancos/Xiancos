@@ -33,7 +33,7 @@
 11.Java源文件和编译后的文件扩展名分别为（B）
 (A) .class和 .java (B).java和 .class
 (C)class和 .class (D) .java和 .java
-12.在Java Applet程序用户自定义的Applet子类中，一般需要重载父类的( )方法来完成一些画图操作。(D)
+12.在Java Applet程序用户自定义的Applet子类中，一般需要重载父类的(D)方法来完成一些画图操作。
 (A) start( ) (B) stop( )
 （C） init( ) (D) paint( )
 13.对于一个Java源文件，import, class定义以及package正确的顺序是：(A)
@@ -58,7 +58,7 @@
 (C)serialize   (D) static
 19.关于抽象方法的说法正确的是(D)
 (A)可以有方法体 (B) 可以出现在非抽象类中
-（C） 是没有方法体的方法 (D) 抽象类中的方法都是抽象方法
+(C) 是没有方法体的方法 (D) 抽象类中的方法都是抽象方法
 20.java.io包的File类是(D)
 (A)字符流类 (B) 字节流类
 (C)对象流类 (D) 非流类
